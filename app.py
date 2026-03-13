@@ -22,7 +22,7 @@ judge_model = st.selectbox(
 if st.button("Evaluate"):
 
     res = requests.post(
-        "http://127.0.0.1:8000/evaluate",
+        "https://evalforge-api.onrender.com/evaluate",
         json={
             "prompt": prompt,
             "response": response,
